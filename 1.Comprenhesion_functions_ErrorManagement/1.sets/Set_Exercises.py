@@ -3,7 +3,8 @@ These exercises are the page w3resource and can find in the next link:
 https://www.w3resource.com/python-exercises/sets/
 '''
 def exercises_1():
-    # 1. Write a Python program to create a set.    
+    # 1. Write a Python program to create a set. 
+       
     print("\033[1m"+"A. Create a set of countries"+ "\033[0m")
     set_countries = {'CO','AE','IT','PE','UK','US'} #Set about countries 
     print ("Type of set_countries: "+ str(type(set_countries)))
@@ -22,13 +23,52 @@ def exercises_1():
 
 
 
-'''   
+  
 def exercises_2():
     # 2. Write a search Python program to iterate over sets.
+    
+    #Create three sets: Odd numbers, soccer teams and string. 
+    num_set = set ([1,3,5,7,9,11,13]) 
+    soccTeam_set = {"ath", "fcb", "bay", "bam", "psg", "liv"} 
+    char_set = set("TheOffice")
+
+    # For loops to iterate
+    print("Elements of the set of odd numbers")
+    for num in num_set:
+        print(num, end=' ')
+    
+    print("\n\nElements of the set of soccer teams")
+    for team in soccTeam_set:
+        print(team, end=' ')
+
+    print("\n\nElements of the set of string")
+    for char_elmt in char_set:
+        print(char_elmt, end=' ')
+
+
 
 def exercises_3():
     # 3. Write a Python program to add member(s) to a set.
 
+    #  We created a empty set
+    empty_set = set()
+    print ("Initial set\n", empty_set)
+    print ('\n')
+    # Prompt the user how many terms he wants to add to he set
+    amount_set = int(input("Enter the set size: "))
+    
+
+    #For loop to add the terms to the set
+    for term in range (amount_set) :
+        element_set= input("Enter a element for the set: ")
+        empty_set.add(element_set)
+
+    print("\nFinally set\n", empty_set)
+
+    
+
+
+''' 
 def exercises_4():
     #4. Write a Python program to remove item(s) from a given set.
 
@@ -114,4 +154,4 @@ def exercises_30():
     #30. Write a Python program to remove all duplicates from a given list of strings and return a list of unique strings. Use the search Python set data type.
 
 '''
-exercises_1()
+exercises_3()
