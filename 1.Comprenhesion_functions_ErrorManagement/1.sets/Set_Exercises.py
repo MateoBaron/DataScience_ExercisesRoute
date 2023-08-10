@@ -3,8 +3,26 @@ These exercises are the page w3resource and can find in the next link:
 https://www.w3resource.com/python-exercises/sets/
 '''
 def exercises_1():
-    # 1. Write a Python program to create a set.
+    # 1. Write a Python program to create a set.    
+    print("\033[1m"+"A. Create a set of countries"+ "\033[0m")
+    set_countries = {'CO','AE','IT','PE','UK','US'} #Set about countries 
+    print ("Type of set_countries: "+ str(type(set_countries)))
+    print (set_countries)
     
+    print ("\033[1m"+"\nB.Another forms to create a set"+"\033[0m")
+    print ("Empty set:")
+    emp_set = set()
+    print ("Type of emp_set: "+ str(type(emp_set)))
+    print (emp_set)
+
+    print ("\nCreate a non empty set:")
+    non_empSet = set([2,4,6,8])
+    print ("Type of non_empSet: "+ str(type(non_empSet)))
+    print (non_empSet)
+
+
+
+'''   
 def exercises_2():
     # 2. Write a search Python program to iterate over sets.
 
@@ -94,3 +112,6 @@ def exercises_29():
 
 def exercises_30():
     #30. Write a Python program to remove all duplicates from a given list of strings and return a list of unique strings. Use the search Python set data type.
+
+'''
+exercises_1()
